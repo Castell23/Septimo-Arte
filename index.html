@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/assets/css/root.css">
+    <link rel="stylesheet" href="/assets/css/desktop.css">
+    <link rel="stylesheet" href="/assets/css/tablet.css">
+    <link rel="stylesheet" href="/assets/css/phone.css">
+    <link rel="stylesheet" href="/assets/libs/fontawesome/css/all.min.css">
+    <title>Séptimo Arte</title>
+</head>
+<body>
+    <header>
+        <h1>Séptimo Arte</h1>
+        <nav>
+            <label for="menu-toggle">
+                <div class="menu-button">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+            </label>
+    
+            <input type="checkbox" id="menu-toggle" class="menu-toggle">
+            <ul class="toggle">
+                <li><a href="#cartelera">Cartelera</a></li>
+                <li><a href="#estrenos">Próximos estrenos</a></li>
+                <li><a href="#contact">Cine clásico</a></li>
+                <li><a href="#quienes-somos">Quiénes somos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero-slider">
+            <figure>
+                <img src="/assets/img/banner-batman.jpg" alt="">
+                <img src="/assets/img/licorice2.png" alt="">
+                <img src="/assets/img/banner-spiderman.jpg" alt="">
+            </figure>
+        </section>
+
+        <section class="banner"></section>
+        
+        <section class="prom">
+            <figure>
+                <img src="/assets/img/promo.jpeg" alt="">
+            </figure>
+        </section>
+        
+        <section class="cartelera" id="cartelera">
+            <h2>Cartelera</h2>
+            <div class="posters-cartelera">
+                <div class="poster">
+                    <img src="/assets/img/batman.jpg" alt="">
+                    <button class="button-cartelera">¡Quiero verla!</button>
+                </div>
+                <div class="poster">
+                    <img src="/assets/img/Batman_the_dark_knight.jpg" alt="">
+                    <button class="button-cartelera">¡Quiero verla!</button>
+                </div>
+                <div class="poster">
+                    <img src="/assets/img/el-padrino-50.jpg" alt="">
+                    <button class="button-cartelera">¡Quiero verla!</button>
+                </div>
+                <div class="poster">
+                    <img src="/assets/img/licorice.jpg" alt="">
+                    <button class="button-cartelera">¡Quiero verla!</button>
+                </div>
+                <div class="poster">
+                    <img src="/assets/img/spencer.jpg" alt="">
+                    <button class="button-cartelera">¡Quiero verla!</button>
+                </div>
+                <div class="poster">
+                    <img src="/assets/img/belfast.jpg" alt="">
+                    <button class="button-cartelera">¡Quiero verla!</button>
+                </div>
+                <div class="poster">
+                    <img src="/assets/img/king-richard.jpg" alt="">
+                    <button class="button-cartelera">¡Quiero verla!</button>
+                </div>
+                <div class="poster">
+                    <img src="/assets/img/smnwh.jpg" alt="">
+                    <button class="button-cartelera">¡Quiero verla!</button>
+                </div>
+                <div class="poster">
+                    <img src="/assets/img/spider-man_un_nuevo_universo_postereng2_mf.jpg" alt="">
+                    <button class="button-cartelera">¡Quiero verla!</button>
+                </div>
+                <div class="poster">
+                    <img src="/assets/img/vast.jpg" alt="">
+                    <button class="button-cartelera">¡Quiero verla!</button>
+                </div>
+            </div>
+        </section>
+    
+        <section class="proximos-estrenos">
+            <h2 id="estrenos">Próximos estrenos</h2>
+            <div class="posters-proximos">
+                <div>
+                    <img src="/assets/img/tobey2.jpg" alt="">
+                    <p>7/4</p>
+                </div>
+                <div>
+                    <img src="/assets/img/Contact2Bcartel.jpg" alt="">
+                    <p>7/4</p>
+                </div>
+                <div>
+                    <img src="/assets/img/ecos.jpg" alt="">
+                    <p>14/4</p>
+                </div>
+                <div>
+                    <img src="/assets/img/alien-1.jpg" alt="">
+                    <p>14/4</p>
+                </div>
+                <div>
+                    <img src="/assets/img/sing+2.jpg" alt="">
+                    <p>21/4</p>
+                </div>
+                <div>
+                    <img src="/assets/img/duna.jpg" alt="">
+                    <p>21/4</p>
+                </div>
+                <div>
+                    <img src="/assets/img/corazon.jpg" alt="">
+                    <p>28/4</p>
+                </div>
+                <div>
+                    <img src="/assets/img/west.jpg" alt="">
+                    <p>28/4</p>
+                </div>
+            </div>
+        </section>
+    
+        <section class="cine-clasico" id="contact">
+            <h3>El cine es de todos, y por eso queremos que nos cuentes qué clásico te gustaría que reestrenáramos</h3>
+            <form>
+                <label for="email"><input type="email" id="email" placeholder="Email"></label>
+                <label for=""><textarea id="text-area" cols="30" rows="5" placeholder="Contanos cuál te gustaría y por qué"></textarea></label>
+                <div class="check_p">
+                    <input type="checkbox" name="check" id="check"> <p>Acepto recibir noticias y promociones exclusivas</p>
+                </div>
+                <button>Enviar</button>
+            </form>
+        </section>
+    
+        <section class="quienes-somos" id="quienes-somos">
+            <h2>Conocenos</h2>
+            <p class="quienes-somos-p">Séptimo Arte es una organización sin fines de lucro fundada en 2007 con el propósito de compartir, entre todos, esto tan lindo que es el cine. Por y para la comunidad, Séptimo Arte se caracteriza por estrenar clásicos de la gran pantalla, además de fomentar y organizar actividades varias entre los vecinos.
+                Creemos que la compañía siempre hace más linda la experiencia, ¡vení a visitarnos!</p>
+            <iframe class="mapa-phone" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13218.919094815596!2d-118.3457564!3d34.0764408!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2b8d62f45f12d%3A0xd33b5c6a14141744!2sNew%20Beverly%20Cinema!5e0!3m2!1ses!2sar!4v1647294954110!5m2!1ses!2sar" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            <div class="p-mapa_desktop">
+                <p>Séptimo Arte es una organización sin fines de lucro fundada en 2007 con el propósito de compartir, entre todos, esto tan lindo que es el cine. Por y para la comunidad, Séptimo Arte se caracteriza por estrenar clásicos de la gran pantalla, además de fomentar y organizar actividades varias entre los vecinos.
+                <br>
+                Creemos que la compañía siempre hace más linda la experiencia, ¡vení a visitarnos!</p>
+                <iframe class="mapa" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13218.919094815596!2d-118.3457564!3d34.0764408!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2b8d62f45f12d%3A0xd33b5c6a14141744!2sNew%20Beverly%20Cinema!5e0!3m2!1ses!2sar!4v1647294954110!5m2!1ses!2sar" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="border"></div>
+        <h1>Séptimo Arte</h1>
+        <div class="icons">
+            <i class="fa-brands fa-instagram icon"></i>
+            <i class="fa-brands fa-twitter icon"></i>
+            <i class="fa-brands fa-facebook icon"></i>
+        </div>
+        <div class="rights">
+            © Séptimo Arte. Todos los derechos reservados</footer>
+        </div>
+    </footer>
+</body>
+</html>

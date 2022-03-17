@@ -1,0 +1,535 @@
+@media (min-width: 790px) {
+    header {
+        background-color: #313030ff;
+        width: 100%;
+        height: 10vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+    }
+
+    header h1 {
+        background: none;
+        font-size: 2rem;
+        color: #e1e1e1ff;
+    }
+
+    .menu-button {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        width: 2.5rem;
+        height: 2.25rem;
+        padding: 0.625rem;
+        border-radius: 0.4375rem;
+        background-color: #0a66c3;
+        cursor: pointer;
+        position: absolute;
+        left: 90%;
+        top: 27%;
+    }
+    
+    i {
+        font-size: 2rem;
+        color: #e1e1e1ff;
+        display: flex !important;
+        justify-content: center;
+    }
+    
+    .menu-toggle {
+        display: none;
+    }
+    
+    .toggle {
+        display: none;
+        text-align: center;
+        background-color: #0a66c3;
+        padding: 1.25rem;
+        width: 100%;
+        margin: 25px auto;
+        position: absolute;
+        left: 0;
+        z-index: 1;
+    }
+    
+    .toggle li {
+        display: block;
+        padding: 1.25rem 0;
+        font-size: 1.25rem;
+    }
+    a {
+        color: #e1e1e1ff;
+    }
+    
+    .menu-toggle:checked + .toggle {
+        display: block;
+    }
+
+    .hero-slider {
+        display: none;
+    }
+    .banner{
+        overflow: hidden;
+        z-index: 0;
+        position: relative;
+        width: 100%;
+        height: 90vh;
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        background-position: top;
+        animation: banner 15s infinite linear;
+    }
+    
+    @keyframes banner{
+        0%{
+            background-image: url('/assets/img/banner-batman.jpg');
+        }
+        33%{
+            background-image: url('/assets/img/banner-batman.jpg');
+        }
+    
+    
+        34%{
+            background-image: url('/assets/img/licorice-pizza-banner.png');
+        }
+        67%{
+            background-image: url('/assets/img/licorice-pizza-banner.png');
+        }
+
+        68%{
+            background-image: url('/assets/img/banner-spiderman.jpg');
+        }
+        99%{
+            background-image: url('/assets/img/banner-spiderman.jpg');
+        }
+    }
+    .prom {
+        width: 100%;
+        height: 30vh;
+    }
+
+    .prom figure {
+        height: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .prom figure img {
+        width: 100%;
+        max-width: 600px;
+        height: 100%;
+        margin: 1.25rem 0;
+        box-shadow: 0px 0px 15px 6px rgba(0,0,0,0.6);
+        margin-top: 3.125rem;
+    }
+
+    .cartelera {
+        width: 100%;
+        height: 100%;
+        display: grid;
+        justify-content: center;
+        align-content: center;
+        margin-top: 6.25rem;
+        padding-bottom: 7.5rem;
+    }
+
+    .cartelera h2 {
+        display: flex;
+        justify-content: center;
+        text-transform: uppercase;
+        color: #e1e1e1ff;
+        font-size: 1.7rem;
+        padding-bottom: 3.125rem;
+        text-shadow: 2px 2px 0px rgba(0,0,0,0.5);
+    }
+
+    .posters-cartelera {
+        width: 100%;
+        height: 70rem;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        grid-column-gap: 3.125rem;
+        grid-row-gap: 5rem;
+        padding: 0 1.875rem 0 1.875rem;
+    }
+
+    .posters-cartelera div {
+        display: grid; 
+        grid-template-columns: 1fr; 
+        grid-template-rows: 1fr 1fr; 
+        gap: 1.25rem 1.25rem; 
+        position: relative;
+    }
+    .poster {
+        height: 40vh;
+    }
+    .posters-cartelera img {
+        width: 100%;
+        height: 17.2344rem;
+        box-shadow: 0px 0px 18px -7px #000000;
+        border-radius: 0.3125rem;
+    }
+    
+    button {
+        border: none;
+        width: 100%;
+        height: 2rem;
+        border-radius: 0.3125rem;
+        cursor: pointer;
+        background-color: #0a66c3;
+        color: #e1e1e1ff;
+        box-shadow: 5px 8px 16px -3px rgba(0,0,0,0.5);
+        position: absolute;
+        top: 17.3125rem;
+    }
+    .button-cartelera:active {
+        background-color: #1b7ee2;
+    }
+
+    .proximos-estrenos {
+        width: 100%;
+        height: 100%;
+        padding-top: 1.25rem;
+        display: grid;
+        justify-content: center;
+        align-content: center;
+        background-color: #4468ab;
+    }
+
+    .proximos-estrenos h2 {
+        display: flex;
+        justify-content: center;
+        text-transform: uppercase;
+        color: #e1e1e1ff;
+        font-size: 1.7rem;
+        padding-bottom: 2.5rem;
+        text-shadow: 2px 2px 0px rgba(0,0,0,0.5);
+    }
+
+    .posters-proximos {
+        width: 100%;
+        max-width: 100%;
+        height: 100%;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-column-gap: 3.125rem;
+        grid-row-gap: 4.375rem;
+        padding: 0 1.25rem;
+    }
+
+    .posters-proximos img {
+        width: 100%;
+        height: 17.2344rem;
+        box-shadow: 0px 0px 18px -7px #000000;
+    }
+
+    .posters-proximos > div {
+        position: relative;
+        height: 100%;
+    }
+
+    .posters-proximos > div > p {
+        background-color: #000;
+        color: #e1e1e1ff;
+        position: absolute;
+        top: 15.875rem;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .cine-clasico {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin-top: 6.25rem;
+    }
+    .cine-clasico h3 {
+        width: 90%;
+        color: #e1e1e1ff;
+        padding-bottom: 3.125rem;
+        text-transform: uppercase;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1rem;
+    }
+    form {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        width: 60%;
+        padding: 1.25rem;
+        padding-bottom: 4.0625rem;
+        background: rgba( 255, 255, 255, 0.05 );
+        box-shadow: 0 8px 2px 0 rgba( 31, 38, 135, 0.37 );
+        backdrop-filter: blur( 0px );
+        -webkit-backdrop-filter: blur( 0px );
+        border-radius: 10px;
+        border: 1px solid rgba( 255, 255, 255, 0.18 );
+    }
+    label input {
+        width: 20rem;
+        height: 2.5rem;
+        margin-bottom: 1.5625rem;
+        padding-left: 0.625rem;
+        border: 0.125rem solid #ebe1ff;
+        border-radius: 0.625rem;
+        background-color: transparent;
+        outline: none;
+        transition: border 1s;
+    }
+    #email::placeholder {
+        color: white;
+    }
+    #text-area::placeholder {
+        color: white;
+    }
+    label input:focus {
+        border: 0.125rem solid #e040aa;
+    }
+    
+    #text-area {
+        padding-top: 0.3125rem;
+        width: 20rem;
+        height: 7.5rem;
+        margin-bottom: 1.5625rem;
+        padding-left: 0.625rem;
+        border: 0.125rem solid #ebe1ff;
+        border-radius: 0.625rem;
+        background-color: transparent;
+        outline: none;
+        resize: none;
+        transition: border 1s;
+    }
+    #text-area:focus {
+        border: 0.125rem solid #e040aa;
+    }
+    form button {
+        width: 20rem;
+        height: 2.8rem;
+        border: none;
+        justify-content: center;
+        align-items: center;
+        border-radius: 0.625rem;
+        background-color: #e040aa;
+        color: white;
+        cursor: pointer;
+        box-shadow: none;
+    }
+    form button:active {
+        background-color: #ca53a2;
+    }
+    .check_p {
+        width: 20rem;
+        display: flex;
+    }
+    .check_p p {
+        width: 100%;
+        font-size: 0.7rem;
+        color: #e1e1e1ff;
+        margin-bottom: 1.5625rem;
+        margin-left: 0.9375rem;
+    }
+
+    .quienes-somos {
+        width: 100%;
+        height: 100%;
+        margin-top: 6.25rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .quienes-somos h2 {
+        display: flex;
+        justify-content: center;
+        text-transform: uppercase;
+        color: #e1e1e1ff;
+        font-size: 1.7rem;
+        padding-bottom: 3.125rem;
+        text-shadow: 2px 2px 0px rgba(0,0,0,0.5);
+    }
+
+    .quienes-somos-p {
+        width: 50%;
+        color: #e1e1e1ff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.1rem;
+    }
+    .mapa-phone {
+        width: 50%;
+        margin-top: 1.875rem;
+    }
+    .p-mapa_desktop {
+        display: none;
+    }
+    footer {
+        width: 100%;
+        height: 25%;
+        background-color: #000;
+        margin-top: 6.25rem;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .border {
+        margin: 0 auto;
+        width: 90%;
+        height: 0.125rem;
+        border-bottom: 1px solid #e1e1e1ff;
+        padding-top: 1.25rem;
+    }
+
+    footer h1 {
+        background: none;
+        font-size: 2rem;
+        color: #e1e1e1ff;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-top: 1.875rem;
+    }
+
+    .icons {
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        margin-top: 1.875rem;
+    }
+    .icon {
+        transition: transform 1s;
+    }
+    .icon:hover {
+        transform: rotate(35deg);
+        cursor: pointer;
+    }
+    .icon:nth-child(2) {
+        margin-left: 7.8125rem;
+        margin-right: 7.8125rem;
+    }
+    .rights {
+        color: #e1e1e1ff;
+        margin-top: 1.875rem;
+        display: flex;
+        justify-content: center;
+        padding-bottom: 1.25rem;
+    }
+}
+
+@media (min-width: 1050px) {
+    .posters-cartelera {
+        width: 100%;
+        height: 48rem;
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-column-gap: 3.125rem;
+        grid-row-gap: 4.375rem;
+        padding: 0 1.875rem 0 1.875rem;
+    }
+    .posters-proximos {
+        width: 100%;
+        max-width: 100%;
+        height: 100%;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-column-gap: 3.125rem;
+        grid-row-gap: 4.375rem;
+        padding: 0 1.25rem;
+    }
+    .proximos-estrenos {
+        padding-top: 0;
+    }
+    .poster {
+        height: 40vh;
+    }
+    .poster button {
+        height: 2rem;
+    }
+    .quienes-somos-p {
+        display: none;
+    }
+    .mapa-phone {
+        display: none;
+    }
+    .p-mapa_desktop {
+        display: flex;
+        width: 70%;
+    }
+    .p-mapa_desktop p {
+        width: 60%;
+        color: #e1e1e1ff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.1rem;
+        margin-right: 1.25rem;
+    }
+    .mapa {
+        width: 40%;
+    }
+}
+
+@media (min-width: 1440px) {
+    .proximos-estrenos {
+        padding-top: 0;
+    }
+    .cartelera {
+        padding-bottom: 0;
+    }
+    .posters-cartelera {
+        max-width: 100%;
+        height: 100vh;
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-column-gap: 3.125rem;
+        grid-row-gap: 0rem;
+        padding: 0 1.25rem;
+        margin: 0 auto;
+    }
+    .proximos-estrenos {
+        padding-top: 0;
+    }
+    .p-mapa_desktop {
+        width: 50%;
+    }
+    form {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        width: 50%;
+        padding: 1.25rem;
+        padding-bottom: 5.3125rem;
+        background: rgba( 255, 255, 255, 0.05 );
+        box-shadow: 0 8px 2px 0 rgba( 31, 38, 135, 0.37 );
+        backdrop-filter: blur( 0px );
+        -webkit-backdrop-filter: blur( 0px );
+        border-radius: 0.625rem;
+        border: 1px solid rgba( 255, 255, 255, 0.18 );
+    }
+}
+
+@media (max-width: 344px) {
+    .icon:nth-child(2) {
+        margin-left: 7.8125rem;
+        padding-right: 7.8125rem;
+    }
+}
